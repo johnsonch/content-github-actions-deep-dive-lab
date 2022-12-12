@@ -7,7 +7,7 @@ on:
 
 jobs:
   hello:
-    uses: ./.github/workflows/hello-world.yaml@main
+    uses: ./.github/workflows/hello-world.yaml
 
   build:
     needs: hello
