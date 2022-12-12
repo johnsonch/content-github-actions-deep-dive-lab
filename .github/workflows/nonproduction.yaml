@@ -6,8 +6,11 @@ on:
       - feature*
 
 jobs:
+  hello:
+    uses: ./.github/workflows/hello-world.yaml@main
 
   build:
+    needs: hello
     runs-on: ubuntu-latest
     env:
       BUCKET_NAME: cfst-3457-af31d72c9b61d30e3911f5687-nonprodbucket-zf01moa0k6s2
